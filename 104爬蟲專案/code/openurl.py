@@ -3,14 +3,14 @@ from selenium import webdriver   #導入瀏覽器
 from selenium.webdriver.common.by import By  #選取瀏覽器
 import time
 # 读取Excel文件中的特定工作表
-data = pd.read_excel('group8_python_class\\104爬蟲專案\\商業分析師.xlsx', sheet_name='Sheet1')
+data = pd.read_excel('104爬蟲專案/excel 20230607/資料分析師.xlsx', sheet_name='Sheet1')
 
 
 # 选择特定列
 column_c_data = data['職缺連結']
 
 
-driver=webdriver.Chrome('group8_python_class\104爬蟲專案\chromebriver\chromedriver.exe')
+driver=webdriver.Chrome('group8_python_class\104爬蟲專案\chromedriver\chromedriver.exe')
 
 # 循环遍历每个链接
 for link in column_c_data:

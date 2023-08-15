@@ -53,7 +53,7 @@ class Jobs:
            
 
 if __name__ == "__main__":
-    keyword = "數據分析業務"
+    keyword = "數據分析師"
     data = Jobs(keyword)
     data.getData()
     data.toExcel()
